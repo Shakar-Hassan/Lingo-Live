@@ -16,7 +16,7 @@ class CategoriesController < ApplicationController
   end
 
   private
-
+  # hell no
   def reset_review_deck
     UserFlashcard.where(user: current_user, category: @category, known: true)
                  .map do |known_flashcard|
